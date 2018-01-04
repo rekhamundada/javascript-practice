@@ -1,0 +1,11 @@
+Write a function reverseArray that reverses the elements of an array and returns the reversed array.
+
+reverseArray([1,2,3,4])    // => [4,3,2,1]
+
+function reverseArray(arr){
+  var newArr = [];
+  for(var i= arr.length -1; i >= 0; i--){
+    newArr.push(arr[i])
+  }
+  return newArr
+}
