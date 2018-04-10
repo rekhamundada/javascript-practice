@@ -1,6 +1,6 @@
 var moveZeroes = function(nums) {
   var index=0
-  for(var i=0; i<nums.length;i++){
+  for (var i=0; i<nums.length;i++){
       if(nums[i] != 0){
         nums[index++] = nums[i]
       }

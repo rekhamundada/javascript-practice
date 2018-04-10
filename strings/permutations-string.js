@@ -1,6 +1,6 @@
-function recursiveStringPermutations(str) {
+function recursiveStringPermutations(str1) {
   var results = [ ];
-  getPerms(str, [ ]);
+  getPerms(str1, [ ]);
   function getPerms(str, arr) {
       if (typeof str === 'string') str = str.split('');
       if (!str.length)  results.push(arr.join(''));
@@ -29,7 +29,7 @@ function stringPermutations (str) {
     var curLetter = letters.shift();
     var tmpResults = [ ];
     results.forEach((curResult) => {
-      for (var i = 0; i <= curResult.length; i++) {
+      for (var i = 0; i <= curResult.length; i++){
         var tmp = curResult.slice();
         //make copy so we can modify it
         //insert the letter at the current position

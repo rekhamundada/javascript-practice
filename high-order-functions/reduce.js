@@ -1,6 +1,5 @@
 // Implement the reduce function.
 // reduce([1, 2, 3, 4], (a, b) => a + b, 0) // 10
-
 function myReduce (arr, func, start) {
   var total  = start;
   for (var i = 0; i < arr.length; i++) {
@@ -29,3 +28,8 @@ let total_weight = animals.reduce((weight, animal, index, animals) => {
 // The second parameter is the current item in the array.
 // The third is the index again.
 // The last is the full array.
+function addn(arr) {
+ return arr.slice(1)
+     .reduce(function(x,y){return x+y},arr[0])
+}
+addn([10,4,5,15])

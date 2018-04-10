@@ -6,7 +6,7 @@
 // return (newNum ^ i);
 // }
 var missingNumber = function(nums) {
-var missing=0;
+var missing =0;
 for (i=0; i<nums.length; i++) {
     missing ^= (i+1) ^nums[i];
 }

@@ -9,11 +9,11 @@
 // Meaning:  x  = x ^ y
 var singleNumber = function(nums) {
 
-   var result = 0
-   for (var i = 0; i <nums.length;i++){
+   var result = 0;
+   for (var i = 0; i < nums.length;i++){
       result ^= nums[i];
       //console.log(result, 'rrrrr')
    }
-   return result
+   return result;
 };
-singleNumber([1,2,2]) // returns 1
+singleNumber([1, 2, 2]); // returns 1

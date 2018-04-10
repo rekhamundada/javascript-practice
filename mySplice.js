@@ -4,23 +4,19 @@
 function mySplice (arr, start, deleteCount) {
   var deletedArr = [];
   var startElements = [];
-
   //Remove members up to start
   for (var i=0; i<start; i++) {
     startElements.push(arr.shift());
   }
-
   //Remove deleted elements
   for (var j=0; j<deleteCount; j++) {
     deletedArr.push(arr.shift());
   }
-
   //Add start elements back into the original array
   var startElementsLength = startElements.length;
   for (var z=0; z<startElementsLength; z++) {
     arr.unshift(startElements.pop());
   }
-
   return deletedArr;
 }
 var myArray = [1,2,3];
