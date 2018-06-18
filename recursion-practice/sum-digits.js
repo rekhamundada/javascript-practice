@@ -12,6 +12,16 @@ function sumDigits(num) {
   return total;
 }
 sumDigits(1234); // 10
+function sumOfDigits(num){
+  var num = num.toString();
+  var sum = 0;
+   for (var i = 0; i < num.length; i++){
+     console.log(num[i], ' is num[i]');
+     sum += parseInt(num[i]);
+   }
+   return sum;
+ }
+ sumOfDigits(414); // OUTPUT: 9
 // without Recursion
 // The parseInt() function parses a string and returns an integer.
 function sumDigits1(num) {
@@ -19,7 +29,7 @@ function sumDigits1(num) {
   var newString = num.toString().split('');
   console.log(newString, 'is the String')
   // [ '1', '1', '4', '8' ] 'is the String'
-  for (var i = 0; i < newString.length; i ++) {
+  for (var i = 0; i < newString.length; i++) {
     var converted = parseInt(newString[i]);
     total += converted;
   }

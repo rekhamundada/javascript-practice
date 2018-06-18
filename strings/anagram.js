@@ -9,6 +9,12 @@ var isAnagram = function(s, t) {
 };
 isAnagram('car', 'cat');
 
+function anagram(string1, string2) {
+  var sortedStrings = [string1, string2].map(function (string) {
+    return string.split('').sort().join('');
+  });
+  return sortedStrings[0] === sortedStrings[1];
+}
 
 function checkAnagram(str1, str2) {
   if (str1.length !== str2.length) return false;
@@ -24,3 +30,18 @@ function checkAnagram(str1, str2) {
 // checkAnagram is not working properly
 checkAnagram('hello', 'oolle');
 
+function checkAnagram(str1,str2){
+  if (str1.length !== str2.length) return false;
+  for (var i=0;i<str1.length;i++){
+    var count = 0;
+    // if(count<=0) return false
+    for (var k=0; k<str2.length;k++){
+      if (str2[k].toLowerCase() === str1[i].toLowerCase()) {
+        count++;
+        break;
+      }
+    }
+  }
+  return true;
+}
+checkAnagram('hello', 'ohlley');

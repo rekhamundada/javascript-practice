@@ -17,6 +17,7 @@ filter passes your callback three arguments:
 The current item
 The current index
 The array you called filter on
+
 Reduce-
 map creates a new array by transforming every element in an array, individually. filter creates a new array by removing elements that don't belong. reduce, on the other hand, takes all of the elements in an array, and reduces them into a single value.
 reduce passes your callback four arguments:

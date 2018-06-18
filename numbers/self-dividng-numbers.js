@@ -9,7 +9,7 @@ var selfDividingNumbers = function(left, right) {
 };
 
 function isDividing(num) {
-var digit = num.toString()
+var digit = num.toString();
 for (var i = 0;i < digit.length;i++){
   if (digit[i] === 0) return false;
   else if (num % digit[i] !== 0) return false;

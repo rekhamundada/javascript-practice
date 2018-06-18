@@ -1,4 +1,4 @@
-Write a function that takes a string of text (containing ONLY lowercase letters) and returns an object containing the count for each letter in the string.
+// Write a function that takes a string of text and returns an object containing the count for each letter in the string.
 
 frequencyAnalysis('abca');
 // => {a: 2, b: 1, c: 1}
@@ -10,12 +10,16 @@ normalizedFrequency('abca');
 frequencyAnalysis('abca');
 
 function frequencyAnalysis(str){
-  var obj = {}
-  for(var i=0; i<str.length;i++){
-    if(obj[str[i]]) obj[str[i]]++
-    else obj[str[i]]=1;
+  var obj = {};
+  for (var i = 0; i < str.length;i++){
+    if (obj[str[i]]) {
+      obj[str[i]]++;
+      console.log(str[i], 'is the key')
+      console.log(obj[str[i]], 'is the value')
+    }
+    else {obj[str[i]]=1;}
   }
-  return obj
+  return obj;
 }
 function normalizedFrequency(str){
   var obj1 =frequencyAnalysis(str)

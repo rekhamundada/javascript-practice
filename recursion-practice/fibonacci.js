@@ -11,9 +11,9 @@ var fib = function(n){
   if (n <= 1) return n;
   return fib(n - 1) + fib(n - 2);
 };
-
 fib(17);
-function fibonacci(num){
+
+function fibonacci (num){
   var a = 1, b = 0, temp;
   while (num >= 0){
     temp = a;
@@ -21,6 +21,5 @@ function fibonacci(num){
     b = temp;
     num--;
   }
-
   return b;
 }

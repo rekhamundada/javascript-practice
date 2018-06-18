@@ -19,15 +19,17 @@ console.log(sum);  // 15
 // Let’s say that we want to calculate the combined weight of all the animals in our array. Using a for-loop we can write something like this:
 let total_weight = 0;
 for (let i = 0; i < animals.length; i++) {
-    total_weigth += animals[i].weight
+    total_weigtht += animals[i].weight
 }
 let total_weight = animals.reduce((weight, animal, index, animals) => {
   return weight += animal.weight
 }, 0)
+// 1.The current value
+// 2.The current item of the array
+// 3.The current index of the current item
+// 4.The entire array
 // The first parameter is the current value of the end value. We have to set the initial value at the end of the function. In this case we set it to 0. This could be any value though.
-// The second parameter is the current item in the array.
-// The third is the index again.
-// The last is the full array.
+
 function addn(arr) {
  return arr.slice(1)
      .reduce(function(x,y){return x+y},arr[0])

@@ -10,25 +10,23 @@ for (var i=0; i<nums.length;i++){
  return newArr
 };
 
-findDuplicates([4,3,2,7,8,2,3,1])
-
+findDuplicates([4, 3, 2, 7, 8, 2, 3, 1]);
 
 var findDuplicates1 = function(arr) {
   var duplicates = [];
   var obj = {};
   for (var i = 0; i < arr.length;i++){
-     console.log(obj[arr[i]], arr[i], 'before')
+     console.log(obj[arr[i]], arr[i], 'before');
   if (!obj[arr[i]]) {
     obj[arr[i]] = {};
-    console.log(obj[arr[i]], arr[i], 'after')
+    console.log(obj, 'object')
+    console.log(obj[arr[i]], arr[i], 'after');
   }
-  else {
-    duplicates.push(arr[i]);
-  }
+  else { duplicates.push(arr[i]); }
 }
 return duplicates;
 };
-findDuplicates1([4,3,2,7,8,2,3,1])
+findDuplicates1([4, 3, 2, 7, 8, 2, 3, 1]);
 // undefined 4 'before'
 // {} 4 'after'
 // undefined 3 'before'

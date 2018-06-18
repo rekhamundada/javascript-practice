@@ -18,8 +18,8 @@ function recursiveStringPermutations(str1) {
       return results.indexOf(el) === index; //filter out non-unique words
   }).sort();
 }
-
 recursiveStringPermutations('one');
+
 stringPermutations('one');
 function stringPermutations (str) {
   var results = [ ];

@@ -8,7 +8,7 @@ function gcd(num1, num2){
     return gcd(num2, remainder );
   }
 }
-gcd(8,12);
+gcd(8, 12);
 
 egcd(8, 12);    // => 4
 function egcd(a, b) {

@@ -16,6 +16,9 @@ var filtered = myFilter(arr, isEven);
 console.log(filtered);   // [2, 4, 6]
 console.log(arr);     // [1, 2, 3, 4, 5, 6]
 // If i already have an array but i only want to have items in the array that match certain criteria, use the filter.
+// 1.The current item of the array
+// 2.The current index of the current item
+// 3.The entire array
 // Let’s say that we want array of only the animals which are small. Using a for-loop we would write something like this:
 let small_animals = [];
 for (let i = 0; i < animals.length; i ++) {

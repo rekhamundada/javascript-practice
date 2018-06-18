@@ -1,15 +1,14 @@
 function sumIter(){
-  var sum =0;
-  for (var i=0; i < arguments.length; i++) {
-    sum += arguments[i]
+  var sum = 0;
+  for (var i = 0; i < arguments.length; i++) {
+    sum += arguments[i];
   }
   return sum;
 }
 sumIter(3,4,5)
 
 function sumRecur(){
-  var args = [].slice.call(arguments)
-
+  var args = [].slice.call(arguments);
   if (args.length <= 2){
     return args[0] + args[1];
     //  return args[0] * args[1]; for multiplication
@@ -24,9 +23,6 @@ function sumRecur1(...args){
   if (args.length <= 2){
     return args[0] + args[1];
   }
-  return (
-    args[0] +
-    sumRecur1(...args.slice(1))
-  );
+  return (args[0] + sumRecur1(...args.slice(1)));
 }
 sumRecur1(3,4,5);

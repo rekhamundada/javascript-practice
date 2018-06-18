@@ -1,4 +1,13 @@
 //Write a function that accepts a string and returns the word from that string with the most vowels.
+vowelCount("Good Job");
+function vowelCount(str){
+  var count = 0;
+  var vowels = "aeiouAEIOU";
+  for (var i=0;i<str.length;i++){
+    if (vowels.indexOf(str[i]) > -1) count++;
+  }
+  return count;
+}
 
 function mostVowels(str){
   var vowels = 'aeiouAEIOU';
@@ -6,20 +15,20 @@ function mostVowels(str){
   var mostVowels = 0;
   var leadWord = '';
 
-  for(var i =0; i< wordsArr.length; i++){
-    var word = wordsArr[i]
+  for (var i = 0; i < wordsArr.length; i++){
+    var word = wordsArr[i];
     var vowelCount = 0;
-     for(var j=0; j<word.length; j++){
-      if(vowels.indexOf(word[j]) !== -1){
-        vowelCount +=1;
+     for (var j=0; j<word.length; j++){
+      if (vowels.indexOf(word[j]) !== -1){
+        vowelCount += 1;
       }
     }
-    if(vowelCount > mostVowels){
+    if (vowelCount > mostVowels){
       mostVowels = vowelCount;
-      leadWord = word
+      leadWord = word;
     }
   }
-  return leadWord
+  return leadWord;
 }
 
 mostVowels("I am a keeper with some real rhythms");
@@ -30,7 +39,8 @@ var shakespeareQuote = "To climb steep hills requires slow pace at first"
 findMost(shakespeareQuote, "re");
 
 function findMost(str, searchTerm){
-  var wordsArr = str.split(" ");console.log(wordsArr)
+  var wordsArr = str.split(" ");
+  console.log(wordsArr)
   var maxCount =0;
   var result = '';
   for(var i=0; i< wordsArr.length;i++){

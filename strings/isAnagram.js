@@ -16,3 +16,17 @@ isAnagram("William Shakespeare","I am a weakish speller")
 //isAnagram("car","cat")
 //if(a.equalsIgnoreCase(b)){
 
+  // function checkAnagram(str1,str2){
+  //   if (str1.length !== str2.length) return false;
+  //   for (var i=0;i<str1.length;i++){
+  //     var count =0;
+  //     // if(count<=0) return false
+  //     for (var k=0; k<str2.length;k++){
+  //       if (str2[k].toLowerCase() === str1[i].toLowerCase()) {
+  //         count++;
+  //         break;
+  //       }
+  //     }
+  //   }
+  //   return true;
+  // }
