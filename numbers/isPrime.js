@@ -8,7 +8,7 @@ function isPrime(num){
   return num !== 1;
 }
 
-function isPrime2(num){
+function isPrime2 (num) {
   if (num < 2) return false;
   for (var i = 2; i < num; i++) {
     console.log(i, 'is i')
